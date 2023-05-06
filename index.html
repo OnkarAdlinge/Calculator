@@ -1,0 +1,43 @@
+<html>
+    <head> <title> Calculator </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="cal.css" rel="stylesheet">
+    </head>
+<body>
+  <div class="main-container"> 
+    <div class="card-container">
+        <div>
+            <label></label><input type="text" id="txt"></label>
+        </div>
+        <div class="box-container" class="btn-primary"> 
+            <input type="button" value="9" onclick="document.getElementById('txt').value+='9'">
+            <input type="button" value="8" onclick="document.getElementById('txt').value+='8'">
+            <input type="button" value="7" onclick="document.getElementById('txt').value+='7'">
+            <input type="button" value="/" onclick="document.getElementById('txt').value+='/'">
+        </div>
+        <div class="box-container">
+            <input type="button" value="6" onclick="document.getElementById('txt').value+='6'">
+            <input type="button" value="5" onclick="document.getElementById('txt').value+='5'">
+            <input type="button" value="4" onclick="document.getElementById('txt').value+='4'">
+            <input type="button" value="*" onclick="document.getElementById('txt').value+='*'">
+            <input type="button" value="Del" onclick="funDelete()">
+        </div>
+        <div class="box-container">
+            <input type="button" value="3" onclick="document.getElementById('txt').value+='3'">
+            <input type="button" value="2" onclick="document.getElementById('txt').value+='2'">
+            <input type="button" value="1" onclick="document.getElementById('txt').value+='1'">
+            <input type="button" value="-" onclick="document.getElementById('txt').value+='-'">
+            <input type="button" value="AC" onclick="document.getElementById('txt').value=' '">
+        </div>
+        <div class="box-container">
+            <input type="button" value="0" onclick="document.getElementById('txt').value+='0'">
+            <input type="button" value="00" onclick="document.getElementById('txt').value+='00'">
+            <input type="button" value="." onclick="document.getElementById('txt').value+='.'">
+            <input type="button" value="+" onclick="document.getElementById('txt').value+='+'">
+            <input type="button" value="=" onclick="calculate()">
+        </div>    
+    </div>
+</div>   
+<script src="cal.js" rel="javascript"></script>
+</body>
+</html>
